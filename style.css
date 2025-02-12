@@ -1,0 +1,634 @@
+/* General Styles */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFF;
+    color: #fff;
+    display: grid;
+    
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background: #ffffff;
+    position: fixed;
+    width: 93%;
+   
+}
+
+.header1 {
+    background-color: rgb(241, 241, 241);
+}
+
+header.header1 {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: purple;
+    margin-left: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    flex: 1;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 30px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: purple;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: purple;
+}
+
+/* Introduction */
+.introduction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 10%;
+    background: linear-gradient(to right, #e37df0, #94bbe9);
+    color: white;
+}
+
+.typing-animation {
+    display: inline-block;
+    border-right: 2px solid #000;  /* Cursor effect */
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1.5s steps(20, end), blink 0.7s infinite;
+    font-family: 'Courier New', monospace;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+
+/* Text Container */
+.content {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Heading and Paragraph Styling */
+.content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    color: #555;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.content p:hover {
+    color: purple;
+    transform: scale(1.05);
+}
+
+.content .social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: purple;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Image Container */
+.content-image {
+    max-width: 50%;
+    text-align: center;
+    
+}
+
+/* Image Styling */
+.content-image img {
+    width: 100%;
+    max-width: 400px; /* Adjust size as needed */
+    border-radius: 10%;
+    height: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Social Icons Section */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Individual Icon Styling */
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: white;
+    color: purple;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 24px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect */
+.social-icons a:hover {
+    background: purple;
+    transform: scale(1.1);
+}
+
+/* Adjusting Icon Colors */
+.social-icons a i {
+    color: purple;
+}
+
+
+
+/* About Me Section */
+#about h2 {
+    font-size: 36px;
+    color: #34495e;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 3px solid purple;
+    transition: color 0.3s, border-color 0.3s;
+    
+}
+
+#about h2:hover {
+    color: purple;
+    border-color: #34495e;
+}
+
+
+.aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 10%;
+    color: black;
+    background: #fff;
+ 
+}    
+
+/* Text Container */
+.about-content {
+    max-width: 50%;
+    padding-left: 50px;
+}
+
+/* Heading and Paragraph Styling */
+.about-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.about-content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-style: arial;
+    text-align: justify;
+    
+}
+
+/* Projects */
+
+#projects {
+    text-align: center;
+    padding: 50px 10%;
+    
+}
+
+#projects h2 {
+    font-size: 40px;
+    color: #2c3e50;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    background: linear-gradient(to right, #3498db, #8e44ad);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#projects h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #3498db;
+    margin: 10px auto 0;
+    border-radius: 2px;
+    transition: width 0.4s;
+}
+
+#projects h2:hover::after {
+    width: 120px;
+}
+
+
+/* Swiper Container */
+.swiper-container {
+    width: 5%;
+    padding: 50px 0;
+}
+
+.swiper-slide {
+    width: auto; /* Adjust width to allow text overflow */
+    overflow: visible;
+}
+
+.project-card {
+    background: #fff;
+    padding: auto;
+   
+}
+
+.project-card img {
+    width: 40%;
+    border-radius: 10px;
+    height: auto;
+    display: block;
+    margin: 0 auto;  /* Centers the image */
+    border-radius: 10px;
+    
+}
+
+.project-card img[alt="Capstone Project"] {
+    width: 20%;  /* Adjust this to make it smaller */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.project-card h3 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin: 15px 0 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.project-card p {
+    font-size: 16px;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.project-card:hover h3 {
+    color: purple;
+}
+
+.project-card:hover p {
+    color: #34495e;
+}
+
+/* Certifications */
+#certifications h2 {
+    font-size: 38px;
+    color: #2c3e50;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    background: linear-gradient(to right, #3498db, #8e44ad);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#certifications h2::before {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: purple;
+    margin: 0 auto 10px;
+    border-radius: 2px;
+    transition: width 0.4s;
+}
+
+#certifications h2:hover::before {
+    width: 120px;
+}
+
+
+.certificate {
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 50px;
+   
+}
+
+.card-area {
+    width: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    margin: 0 auto;
+    position: relative;
+}
+
+.card-area img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-area:hover img {
+    transform: scale(1.1);  /* Zoom in on hover */
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card-area:hover .overlay {
+    opacity: 1;
+}
+
+.content-cert {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    padding-bottom: 1px;
+    margin: 0 auto;
+}
+
+.content-cert img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+}
+
+.content-cert h3 {
+    font-family: arial;
+    font-size: 20px;
+}
+
+.content-cert p {
+    font-size: 20px;
+}
+
+/* Contact Section & Footer */
+.contact-info {
+    text-align: center;
+    padding: 20px 5%;
+    background: linear-gradient(to right, #e37df0, #94bbe9);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.contact-info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Description */
+.contact-info p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Contact Details */
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Individual Contact Item */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    color: #666;
+}
+
+.contact-item i {
+    font-size: 22px;
+    color: purple;
+}
+
+/* Contact Links */
+.contact-item a {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.contact-item a:hover {
+    color: purple;
+}
+
+
+/* Responsive Design for Mobile */
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .nav-links {
+        gap: 20px;
+    }
+
+    .introduction {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content, .content-image {
+        max-width: 100%;
+    }
+
+    .content h1 {
+        font-size: 5vw;
+    }
+
+    .aboutme {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .projects-container {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .nav-links li {
+        display: block;
+    }
+
+    .introduction {
+        padding: 50px 5%;
+    }
+
+    .content h1 {
+        font-size: 6vw;
+    }
+
+    .content p {
+        font-size: 3vw;
+    }
+
+    .button1 {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .projects-container {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .button1 {
+        font-size: 12px;
+        padding: 6px 14px;
+    }
+
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
