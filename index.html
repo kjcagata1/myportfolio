@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header class="header1">
+        <div class="logo">KJC PORTFOLIO</div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certificates</a></li>
+                <li><a href="#contact">Get in Touch</a></li>
+            </ul>
+        </nav> 
+    </header>   
+            <script>
+            function toggleMenu() {
+                const nav = document.querySelector('nav');
+                nav.classList.toggle('active');
+            }
+            </script>
+
+    <section class="introduction">
+        <div class="background-animation"></div>
+        <div class="content">
+            <h1 class="typing-animation">Hello, I'm Kristine!</h1>
+            <p>Web Developer | UI/UX Designer</p>
+            <a href="#projects" class="btn">View My Work</a>
+            <div class="social-icons">
+                <a href="mailto:your-cagatakristinejoy@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.facebook.com/KristineJoyCagata/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://github.com/kjcagata1" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="content-image">
+            <img src="images/profile1.jpg" alt="">
+        </div>
+    </section>
+    
+    <!--SKILLS-->
+    <section id="skills">
+        <div class="skills-content">
+            <h2>My Skills</h2>
+            <div class="skills-container" data-aos="fade-up" data-aos-duration="3000">
+                <span class="skill">HTML/CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">React</span>
+                <span class="skill">PHP</span>
+                <span class="skill">Boostrap</span>
+                <span class="skill">Figma</span>
+                <span class="skill">Bubble.io</span>
+                <span class="skill">UI/UX Design</span>
+                <span class="skill">Hardware</span>
+            </div>
+        </div>
+    </section>
+
+    <!--About Me -->
+   <section id="aboutme" class="split-section">
+  <div class="left-section">
+     <h2>About Me</h2>
+        <p data-aos="fade-up" data-aos-duration="3000">
+         Welcome to my portfolio! I'm Kristine, a frontend developer with hands-on experience in computer 
+         hardware and a strong passion for creating clean, user-friendly UI/UX designs. With experience both 
+         in front-end and back-end development from different projects. 
+        </p>
+        <p data-aos="fade-up" data-aos-duration="3000">
+            Currently living in Davao City with a degree in BS in Information Technology.
+        </p>
+        <a href="#contact" class="btn" data-aos="fade-up" data-aos-duration="3000">Contact Me</a>
+        <a href="docs/Kristine-Joy-Cagata_Resume.pdf" class="btn" target="_blank" data-aos="fade-up" data-aos-duration="3000">My Resume</a>
+      </div>
+  </div>
+  <div class="right-section">
+     <div class="image-container">
+    <img src="images/profile3.jpg" alt="Kristine's Photo">
+  </div>
+  </div>
+</section>
+
+    <!---Projects-->
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
+                <img src="images/project1.png" alt="Project 1">
+                <h3>MediFind: A Smart Pharmacy Locator for Enhanced Pharmaceutical Accessibility</h3>
+                <p>A capstone project using mobile application that helps consumers find reliable 
+                    pharmacies for the medications they need.</p>
+                    <div class="tech-container">
+                        <span class="tech-used">React Native</span>
+                       <span class="tech-used">Machine Learning</span>
+                       <span class="tech-used">Optical Character Recognition</span>
+                    </div>    
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1500">
+                <img src="images/project2.png" alt="Project 2">
+                <h3>Web-based Financial Monitoring System</h3>
+                <p>An online-based design that helps to create a convenient and 
+                    efficient system. The focus of this system is to manage the financial 
+                    status of the church such as tracking the contribution, financial records, 
+                    and other expenses.</p>
+                    <div class="tech-container">
+                        <span class="tech-used">HTML & CSS</span>
+                       <span class="tech-used">JavaScript</span>
+                       <span class="tech-used">phpMyAdmin</span>
+                    </div>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-duration="2000">
+                <img src="images/project3.png" alt="Project 3">
+                <h3>Pet Adoption Web UX/UI Design</h3>
+                <p>A UX/UI web design project for pet adoption that allows users to
+                    find pets looking for a new home.
+                </p>
+                    <div class="tech-container">
+                        <span class="tech-used">Web Design</span>
+                       <span class="tech-used">UX/UI Design</span>
+                       <span class="tech-used">Figma</span>
+                    </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!--Other Projects-->
+    <section id="other-projects" class="other-projects-section">
+        <h2  data-aos="fade-up" data-aos-duration="3000">Other Projects</h2>
+        <div class="projects-gallery" data-aos="fade-up" data-aos-duration="3000">
+        <div class="project-item">
+        <a class="project-link">
+        <img src="images/figma1.png" alt="Project 1">
+        <div class="project-info">
+        <h3>Eumsik: Korean Food Ordering Mobile App Design</h3>
+        <div class="tech-container">
+            <span class="tech-used">App Design</span>
+           <span class="tech-used">UX/UI Design</span>
+           <span class="tech-used">Figma</span>
+        </div>                        
+    </div>
+</a></div>
+<div class="project-item">
+    <a class="project-link">
+        <img src="images/figma3.png" alt="Project 2">
+        <div class="project-info">
+            <h3>Pinterest Inspired Mobile App Design</h3>
+            <div class="tech-container">
+                <span class="tech-used">App Design</span>
+                <span class="tech-used">UX/UI Design</span>
+                <span class="tech-used">Figma</span>
+            </div>                        
+        </div>
+    </a>
+</div>
+<div class="project-item">
+    <a class="project-link">
+        <img src="images/bubble1.png" alt="Project 3">
+        <div class="project-info">
+            <h3>Bubble.io Training Web Design</h3>
+            <div class="tech-container">
+                <span class="tech-used">Bubble.io</span>
+                <span class="tech-used">Web Design</span>
+                <span class="tech-used">Web Development</span>
+            </div>                        
+        </div>
+    </a>
+</div>
+</div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="carousel-section">
+    <h2 class="section-title">Certificates</h2>
+    <div class="carousel-wrapper">
+        <button class="carousel-btn prev">&#8592;</button>
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="carousel-slide"><img src="images/Cert1.png" alt="Cert 1" /></div>
+        <div class="carousel-slide"><img src="images/Cert2.png" alt="Cert 2" /></div>
+        <div class="carousel-slide"><img src="images/Cert3.png" alt="Cert 3" /></div>
+        <div class="carousel-slide"><img src="images/Cert4.png" alt="Cert 4" /></div>
+        <div class="carousel-slide"><img src="images/Cert5.png" alt="Cert 5" /></div>
+        <div class="carousel-slide"><img src="images/Cert6.jpg" alt="Cert 6" /></div>
+        <div class="carousel-slide"><img src="images/Cert7.jpg" alt="Cert 6" /></div>
+        <div class="carousel-slide"><img src="images/Cert8.jpg" alt="Cert 6" /></div>
+        <div class="carousel-slide"><img src="images/Cert9.jpg" alt="Cert 6" /></div>
+      </div>
+    </div>
+    <button class="carousel-btn next">&#8594;</button>
+    </div>
+    <div class="carousel-dots"></div>
+    </section>
+
+    <!--Contact Info Footer -->
+    <footer>
+    <section id="contact">
+        <div class="contact-info">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for collaborations or just a friendly chat!</p>
+        
+        <div class="contact-details">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:cagatakristinejoy@gmail.com">cagatakristinejoy@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <a>+63 968 3999 691</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                 Davao City, Philippines
+            </div>
+        </div>
+    </div>
+    </section>
+    </footer>
+</body>
+<script>
+
+    AOS.init({
+        duration: 1000,  // Animation duration (in ms)
+        once: true,     // Animation happens only once
+    });
+</script>
+</html>
